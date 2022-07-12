@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
   
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
 
@@ -13,17 +13,29 @@
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet" />
 </head>
 <body>
 
   <nav>
-    Features
-    Company
-    Careers
-    About
-  
-    Login
-    Register
+
+    <span class="nav-logo"><img src="images/logo.svg" alt="" /></span>
+    
+    <ul class="nav-left">
+      <li class="nav-item dropdown"><a href="#">Features &or;</a></li>
+      <li class="nav-item dropdown"><a href="#">Company &or;</a></li>
+      <li class="nav-item"><a href="#">Careers</a></li>
+      <li class="nav-item"><a href="#">About</a></li>
+    </ul>
+
+    <ul class="nav-right">
+      <li class="nav-item"><a href="#">Login</a></li>
+      <li class="nav-item nav-special"><a href="#">Register</a></li>
+    </ul>
+
   </nav>
 
   <main>
@@ -34,13 +46,23 @@
       </picture>
     </section>
 
-    <section>
-      Make remote work
+    <section class="hero-content">
+      <h1 class="hero-title">Make remote work</h1>
 
-      Get your team in sync, no matter your location. Streamline processes, 
-      create team rituals, and watch productivity soar.
+      <p class="hero-subtitle">Get your team in sync, no matter your location. Streamline processes, 
+      create team rituals, and watch productivity soar.</p>
     
-      Learn more
+      <button class="hero-button">Learn more</button>
+
+      <div class="clients">
+        <ul>
+          <li class="client-logo"><img src="images/client-databiz.svg" alt="client databiz"></li>
+          <li class="client-logo"><img src="images/client-audiophile.svg" alt="client audiophile"></li>
+          <li class="client-logo"><img src="images/client-meet.svg" alt="client meet"></li>
+          <li class="client-logo"><img src="images/client-maker.svg" alt="client maker"></li>
+        </ul>
+
+      </div>
     </section>
   </main>
   
