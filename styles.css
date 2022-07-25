@@ -18,3 +18,19 @@ p, button, nav {
     font-weight: 500;
     font-size: 18px;
 }
+
+nav {
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hamburger {
+
+}
+
+.nav-items {
+    display: none;
+}
+
